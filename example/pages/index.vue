@@ -10,7 +10,6 @@
 <script>
 export default {
   async fetch ({ app }) {
-    app.head.title = 'Home'
     if (process.server) {
       await app.$analytics.track('Test event 1 in Home page')
       await app.$analytics.track('Test event 2 in Home page')
